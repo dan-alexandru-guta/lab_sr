@@ -5,8 +5,8 @@ from recombee_api_client.api_requests import  SetItemValues, Batch, GetItemValue
 from recombee_api_client.exceptions import APIException
 
 # TODO 1: Configurare credentiale Recombee (la fel ca la Lab 02)
-DB_NAME = 'gutadanalexandru-dev'
-PRIVATE_TOKEN = 'gBityqm2M6mFFH9CYxUltEeQOBhPq6e731Gywu0iRIYvhXoiXTc7LupwDMUTS2a4'
+DB_NAME = 'unstb-dev'
+PRIVATE_TOKEN = 'QQaTL33GgFNtdzdiN7yj0b4VvZAAjte69KjtkTd1JuoSiucs8InKuWQqQX0Vp3E6'
 REGION = 'eu-west'
 
 client = RecombeeClient(DB_NAME, PRIVATE_TOKEN, region=Region.EU_WEST)

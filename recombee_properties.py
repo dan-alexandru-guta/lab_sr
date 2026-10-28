@@ -6,8 +6,8 @@ from recombee_api_client.exceptions import APIException
 
 # TODO 1: Configurare credentiale Recombee
 # Introduceti datele din contul vostru (Settings -> API Logins in Recombee Admin UI)
-DB_NAME = 'gutadanalexandru-dev'
-PRIVATE_TOKEN = 'gBityqm2M6mFFH9CYxUltEeQOBhPq6e731Gywu0iRIYvhXoiXTc7LupwDMUTS2a4'
+DB_NAME = 'unstb-dev'
+PRIVATE_TOKEN = 'QQaTL33GgFNtdzdiN7yj0b4VvZAAjte69KjtkTd1JuoSiucs8InKuWQqQX0Vp3E6'
 REGION = 'eu-west'  # Schimbati cu 'us-west' sau regiunea potrivita daca este cazul
 
 # Initializarea clientului Recombee
