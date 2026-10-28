@@ -6,8 +6,8 @@ from recombee_api_client.exceptions import APIException
 
 # TODO 1: Configurare credentiale Recombee
 # Introduceti datele din contul vostru (Settings -> API Logins in Recombee Admin UI)
-DB_NAME = 'unstb-dev'
-PRIVATE_TOKEN = 'QQaTL33GgFNtdzdiN7yj0b4VvZAAjte69KjtkTd1JuoSiucs8InKuWQqQX0Vp3E6'
+DB_NAME = 'gutadanalexandru-dev'
+PRIVATE_TOKEN = 'gBityqm2M6mFFH9CYxUltEeQOBhPq6e731Gywu0iRIYvhXoiXTc7LupwDMUTS2a4'
 REGION = 'eu-west'  # Schimbati cu 'us-west' sau regiunea potrivita daca este cazul
 
 # Initializarea clientului Recombee
@@ -31,7 +31,7 @@ PROPRIETATI_CATALOG = [
     {"name": "Cpu", "type": "string"},
     {"name": "Ram", "type": "string"},
     {"name": "Memory", "type": "string"},
-    {"name": "GPU", "type": "string"},
+    {"name": "Gpu", "type": "string"},
     {"name": "OpSys", "type": "string"},
     {"name": "Weight", "type": "string"},
     {"name": "Price_euros", "type": "double"}
@@ -40,7 +40,7 @@ PROPRIETATI_CATALOG = [
 def load_dataset():
     """Functie helper care citeste si verifica dataset-ul"""
     try:
-        df = pd.read_csv(PATH_DATASET,encoding='latin1')
+        df = pd.read_csv(PATH_DATASET)
         total_randuri = len(df)
         print(f"Dataset incarcat cu succes! Total randuri: {total_randuri}")
         
